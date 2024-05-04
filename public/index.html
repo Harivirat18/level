@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- title of the document -->
+        <title>Level - Live View</title>
+
+        <!-- external css link -->
+        <link rel="stylesheet" href="./css/main.css" />
+
+        <!-- external icon link -->
+        <link rel="stylesheet" href="./icons/css/font-awesome.min.css" />
+    </head>
+    <body>
+        <!-- header section start -->
+
+        <header>
+            <div class="nav container bg-white flex items-center justify-between">
+                <div class="nav-left text-2xl font-bold tracking-wide">
+                    <a href=""><img src="./image/logo .png" alt="" class="inline mr-2" />Level</a>
+                </div>
+                <div class="nav-right hidden lg:block">
+                    <ul class="uppercase flex items-center justify-between">
+                        <li class="p-10 bg-primary-red text-primary-white cursor-pointer border border-primary-border"><a href="./index.html#home">home</a></li>
+                        <li class="p-10 hover:bg-primary-red hover:text-white cursor-pointer border border-primary-border"><a href="./index.html#portfolio">portfolio</a></li>
+                        <li class="p-10 hover:bg-primary-red hover:text-white cursor-pointer border border-primary-border"><a href="./index.html#blog">blog entries</a></li>
+                        <li class="p-10 hover:bg-primary-red hover:text-white cursor-pointer border border-primary-border"><a href="./index.html#contact">contact us</a></li>
+                    </ul>
+                </div>
+
+                <!-- mobile section start -->
+
+                <div class="nav-mobile block lg:hidden">
+                    <div class="text-xl block lg:hidden" id="ham">
+                        <i class="fa fa-bars" aria-hidden="true"></i>
+                    </div>
+                    <div class="hidden text-xl" id="close">
+                        <i class="fa fa-times" aria-hidden="true"></i>
+                    </div>
+                    <ul class="fixed w-3/4 top-16 right-0 bg-white z-10 uppercase hidden" id="mobile">
+                        <li class="p-10 bg-primary-red text-primary-white cursor-pointer border border-primary-border"><a href="./index.html#home">home</a></li>
+                        <li class="p-10 hover:bg-primary-red hover:text-white cursor-pointer border border-primary-border"><a href="./index.html#portfolio">portfolio</a></li>
+                        <li class="p-10 hover:bg-primary-red hover:text-white cursor-pointer border border-primary-border"><a href="./index.html#blog">blog entries</a></li>
+                        <li class="p-10 hover:bg-primary-red hover:text-white cursor-pointer border border-primary-border"><a href="./index.html#contact">contact us</a></li>
+                    </ul>
+                </div>
+
+                <!-- mobile section end -->
+            </div>
+        </header>
+
+        <!-- header section end -->
+
+        <!-- banner section start -->
+
+        <section id="home" class="banner py-20 lg:py-44" style="background: url(./image/bg-img-1.jpg);">
+            <div class="container">
+                <div class="p-8 bg-white">
+                    <div class="grid gap-5 grid-cols-1 md:grid-cols-3 items-center mb-5">
+                        <div class="border border-primary-border">
+                            <div class="relative">
+                                <input type="text" placeholder="Type your destination..." class="outline-none pl-11 pr-3 py-3 w-full" />
+                                <div class="absolute top-1.5 left-2 text-primary-red text-3xl">
+                                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="border border-primary-border">
+                            <div class="relative">
+                                <input type="text" placeholder="Check In" class="outline-none pl-11 pr-3 py-3" />
+                                <div class="absolute top-1.5 left-2 text-primary-red text-3xl">
+                                    <i class="fa fa-calendar" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="border border-primary-border">
+                            <div class="relative">
+                                <input type="text" placeholder="Check Out" class="outline-none pl-11 pr-3 py-3" />
+                                <div class="absolute top-1.5 left-2 text-primary-red text-3xl">
+                                    <i class="fa fa-calendar" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid gap-5 grid-cols-1 md:grid-cols-3 lg:grid-cols-4">
+                        <div class="border border-primary-border">
+                            <div class="relative">
+                                <input type="text" placeholder="Adult" class="outline-none pl-11 pr-3 py-3" />
+                                <div class="absolute top-1.5 left-2 text-primary-red text-3xl">
+                                    <i class="fa fa-user" aria-hidden="true"></i>
+                                </div>
+                                <div class="absolute top-1.5 right-2 text-xl">
+                                    <i class="fa fa-sort-desc" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="border border-primary-border">
+                            <div class="relative">
+                                <input type="text" placeholder="Children" class="outline-none pl-11 pr-3 py-3" />
+                                <div class="absolute top-2 left-2 text-primary-red text-xl">
+                                    <i class="fa fa-user" aria-hidden="true"></i>
+                                </div>
+                                <div class="absolute top-1.5 right-2 text-xl">
+                                    <i class="fa fa-sort-desc" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="border border-primary-border">
+                            <div class="relative">
+                                <input type="text" placeholder="Room" class="outline-none pl-11 pr-3 py-3" />
+                                <div class="absolute top-1.5 left-2 text-primary-red text-2xl">
+                                    <i class="fa fa-bed" aria-hidden="true"></i>
+                                </div>
+                                <div class="absolute top-1.5 right-2 text-xl">
+                                    <i class="fa fa-sort-desc" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="relative border border-primary-border cursor-pointer">
+                            <div class="py-3 px-7 bg-primary-red hover:bg-primary-darkred text-center text-white">
+                                <h3>Check Availability</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-wrap justify-between items-center gap-5 mt-5">
+                        <div class="text-primary-para">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                        <div class="text-primary-red font-bold text-sm">
+                            <a href="">Need Help?</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- banner section end -->
+
+
+        <!-- red bg section start -->
+
+        <section class="red-bg py-16 bg-primary-red" style="clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 100%, 0 80%);">
+            <div class="container">
+                <div class="text-center text-white">
+                    <div class="text-3xl lg:text-5xl mb-4">
+                        <h2>We are here to help you?</h2>
+                    </div>
+                    <div class="mb-6">
+                        <h3>Subscribe to get our newsletters</h3>
+                    </div>
+                    <div class="py-3 px-5 cursor-pointer inline-block border border-white hover:bg-white hover:text-primary-red">
+                        <h3>SUBSCRIBE NEWLETTERS</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- red bg section end -->
+
+
+        <!-- three image section start -->
+
+        <section class="three-image py-16 lg:py-32">
+            <div class="container">
+                <div class="grid gap-10 items-center grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+                    <div class="text-center text-primary-red p-5 hover:scale-110 hover:border hover:border-primary-border hover:shadow hover:shadow-primary-para">
+                        <div class="text-6xl font-extrabold mb-5">
+                            <i class="fa fa-gavel" aria-hidden="true"></i>
+                        </div>
+                        <div class="font-bold text-xl mb-5">
+                            <h2>Level HTML Template by Tooplate website</h2>
+                        </div>
+                        <div class="mb-5 text-primary-para">
+                            <p>You are allowed to download, edit and use this template for your business or client websites.</p>
+                        </div>
+                        <div class="font-bold text-sm">
+                            <a href="">CONTINUE READING...</a>
+                        </div>
+                    </div>
+                    <div class="text-center text-primary-red p-5 hover:scale-110 hover:border hover:border-primary-border hover:shadow-primary-para">
+                        <div class="text-6xl font-extrabold mb-5">
+                            <i class="fa fa-plane" aria-hidden="true"></i>
+                        </div>
+                        <div class="font-bold text-xl mb-5">
+                            <h2>Original Website Template Producer</h2>
+                        </div>
+                        <div class="mb-5 text-primary-para">
+                            <p>You are NOT allowed to re-distribute the downloadable template ZIP file on any website.</p>
+                        </div>
+                        <div class="font-bold text-sm">
+                            <a href="">CONTINUE READING...</a>
+                        </div>
+                    </div>
+                    <div class="text-center text-primary-red p-5 hover:scale-110 hover:border hover:border-primary-border hover:shadow-primary-para">
+                        <div class="text-6xl font-extrabold mb-5">
+                            <i class="fa fa-life-ring" aria-hidden="true"></i>
+                        </div>
+                        <div class="font-bold text-xl mb-5">
+                            <h2>Contact us if you have any question</h2>
+                        </div>
+                        <div class="mb-5 text-primary-para">
+                            <p>If you see this template being distributed on any other site, that is an illegal copy.</p>
+                        </div>
+                        <div class="font-bold text-sm">
+                            <a href="">CONTINUE READING...</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- three image section end -->
+
+
+        <!-- places section start -->
+        
+        <section id="portfolio" class="places py-20 bg-primary-gray">
+            <div class="container">
+                <div class="flex flex-wrap lg:flex-nowrap gap-10 items-start">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 items-center w-full lg:w-2/3">
+                        <div class="bg-primary-white">
+                            <div>
+                                <img src="./image/img-01.jpg" class="w-full" alt="">
+                            </div>
+                            <div class="p-5">
+                                <h3 class="font-bold tracking-wide mb-3 uppercase">Nunc in felis aliquet metus luctus iaculis</h3>
+                                <p class="mb-3 text-primary-para">Aliquam ac lacus volutpat, dictum risus at, scelerisque nulla. Nullam sollicitudin at augue venenatis eleifend. Nulla ligula ligula, egestas sit amet viverra id, iaculis sit amet ligula.</p>
+                                <a href="" class="bg-primary-red text-primary-white block text-center px-2 py-3  hover:bg-primary-darkred">Get More Info.</a>
+                            </div>
+                        </div>
+                        <div class="bg-white">
+                            <div>
+                                <img src="./image/img-02.jpg" class="w-full" alt="">
+                            </div>
+                            <div class="p-5">
+                                <h3 class="font-bold tracking-wide mb-3 uppercase">Sed cursus dictum nunc quis molestie</h3>
+                                <p class="mb-3 text-primary-para">Pellentesque quis dui sit amet purus scelerisque eleifend sed ut eros. Morbi viverra blandit massa in varius. Sed nec ex eu ex tincidunt iaculis. Curabitur eget turpis gravida.</p>
+                                <a href="" class="bg-primary-red text-primary-white block text-center px-2 py-3  hover:bg-primary-darkred">View Detail.</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full lg:w-1/3">
+                        <div class="px-4 py-5 text-white bg-primary-red">
+                            <h3 class="mb-3 text-xl">Recommended Places</h3>
+                            <h4 class="text-base font-light">Enamel pin cliche tilde, kitsch and VHS thundercats</h4>
+                        </div>
+                        <div class="p-5 bg-white pb-2.5">
+                            <div class="country flex gap-5 bg-primary-gray items-center">
+                                <img src="./image/tn-img-01.jpg" alt="">
+                                <span class="uppercase font-bold text-xl tracking-wide">Europe</span>
+                            </div>
+                        </div>
+                        <div class="p-5 bg-white pb-2.5">
+                            <div class="country flex gap-5 bg-primary-gray items-center">
+                                <img src="./image/tn-img-02.jpg" alt="">
+                                <span class="uppercase font-bold text-xl tracking-wide">Asia</span>
+                            </div>
+                        </div>
+                        <div class="p-5 bg-white pb-2.5">
+                            <div class="country flex gap-5 bg-primary-gray items-center">
+                                <img src="./image/tn-img-01.jpg" alt="">
+                                <span class="uppercase font-bold text-xl tracking-wide">Africa</span>
+                            </div>
+                        </div>
+                        <div class="p-5 bg-white pb-5">
+                            <div class="country flex gap-5 bg-primary-gray items-center">
+                                <img src="./image/tn-img-02.jpg" alt="">
+                                <span class="uppercase font-bold text-xl tracking-wide">South africa</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- places section end -->
+
+
+        <!-- video section start -->
+
+        <section class="video">
+            <img class="w-full" src="./image/bg-img-1.jpg" alt="">
+        </section>
+
+        <!-- video section end -->
+
+
+        <!-- football section start -->
+
+        <section id="blog" class="football py-20" style="background: url(./image/bg-img-2.jpg);">
+            <div class="container">
+                <div class="flex flex-wrap lg:flex-nowrap gap-5 justify-between items-center">
+                    <div class="w-full lg:w-1/4">
+                        <h2 class="uppercase mb-3 text-5xl font-semibold">Asia</h2>
+                        <h3 class="font-semibold text-primary-red text-3xl">Singapore</h3>
+                    </div>
+                    <div class="w-full lg:w-3/4">
+                        <div class="p-5 border border-primary-gray shadow-lg shadow-primary-gray">
+                            <div class="grid col gap-3 items-start pb-5">
+                                <div>
+                                    <img src="./image/img-03.jpg" class="w-full" alt="">
+                                </div>
+                                <div class="p-2">
+                                    <div class="text-primary-red font-semibold mb-3 text-xl">
+                                        <h3>Suspendisse vel est libero sem phasellus ac laoreet</h3>
+                                    </div>
+                                    <div class="text-primary-para text-sm">
+                                        <p class="pb-5">Vivamus eget tellus ornare, sollicitudin quam id, dictum nulla. Phasellus finibus rhoncus justo, tempus eleifend neque dictum ac. Aenean metus leo, consectetur non.</p>
+                                        <p>Etiam aliquam arcu at mauris consectetur scelerisque. Integer elementum justo in orci facilisis ultricies. Pellentesque at velit ante. Duis scelerisque metus vel felis porttitor gravida.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid col gap-3 items-start pb-5">
+                                <div>
+                                    <img src="./image/img-04.jpg" class="w-full" alt="">
+                                </div>
+                                <div class=" p-2">
+                                    <div class=" font-semibold mb-3 text-xl">
+                                        <h3>Suspendisse vel est libero sem phasellus ac laoreet</h3>
+                                    </div>
+                                    <div class="text-primary-para text-sm mb-3">
+                                        <p>Duis accumsan sagittis tortor in ultrices. Praesent tortor ante, fringilla ac nibh porttitor, fermentum commodo nulla.</p>
+                                    </div>
+                                    <div class="font-bold text-sm text-primary-red">
+                                        <a href="">CONTINUE READING...</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid col gap-3 items-start pb-5">
+                                <div>
+                                    <img src="./image/img-05.jpg" class="w-full" alt="">
+                                </div>
+                                <div class=" p-2">
+                                    <div class=" font-semibold mb-3 text-xl">
+                                        <h3>Faucibus dolor ligula nisl metus auctor aliquet</h3>
+                                    </div>
+                                    <div class="text-primary-para text-sm mb-3">
+                                        <p>Nunc in felis aliquet metus luctus iaculis vel et nisi. Nulla venenatis nisl orci, laoreet ultricies massa tristique id.</p>
+                                    </div>
+                                    <div class="font-bold text-sm text-primary-red">
+                                        <a href="">CONTINUE READING...</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- football section end -->
+
+
+        <!-- contact section start -->
+
+        <section id="contact" class="contact py-20" style="background: url(./image/bg-img-3.jpg); background-repeat: no-repeat;background-size: cover;background-position: center center;">
+            <div class="container">
+                <div class="form grid grid-cols-1 lg:grid-cols-2">
+                    <div class="form-map">
+                        <iframe class="w-full h-full" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125406.10926598575!2d78.60662610746407!3d10.815833728239161!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baaf50ff2aecdad%3A0x6de02c3bedbbaea6!2sTiruchirappalli%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1711018827538!5m2!1sen!2sin" width="600" height="450" style="border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="form-content">
+                        <div class="bg-white rounded p-5 mx-0 lg:mx-8">
+                            <input class="w-full bg-primary-gray px-3 py-2 mb-4 outline-none" type="text" placeholder="Name">
+                            <input class="w-full bg-primary-gray px-3 py-2 mb-4 outline-none" type="text" placeholder="Email">
+                            <input class="w-full bg-primary-gray px-3 py-2 mb-4 outline-none" type="text" placeholder="subject">
+                            <input class="w-full bg-primary-gray px-3 pt-2 pb-20 mb-10 outline-none" type="text" placeholder="Message">
+                            <a href="" class="bg-primary-red uppercase  hover:bg-primary-darkred text-primary-white block text-center px-2 py-3">send Message now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- contact section end -->
+
+
+        <!-- footer section start -->
+
+        <footer class="bg-blue-950 py-10">
+            <div class="container">
+                <div class="text-center text-white">
+                    Copyright © 2024 Your Company - Design: <span class="text-primary-red">Harivirat18</span>
+                </div>
+            </div>
+        </footer>
+
+        <!-- footer section end -->
+
+        <!-- external javascript -->
+        <script src="./js/main.js"></script>
+
+    </body>
+</html>
